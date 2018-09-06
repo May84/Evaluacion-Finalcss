@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+body{
+  background:  #02010a;
+  font-family: Dancing Script;
+  width: 90%;
+  margin: 3%;
+}
+
+header{
+  margin: 1%;
+  padding: 3%;
+  background-color: #5b7989;
+  text-shadow:1px 2px #02010a;
+  color: white;
+  border-radius: 10px;
+  animation: header 4s;
+}
+@-webkit-keyframes header{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+  margin-top: 0%;
+  }
+}
+
+
+#navegacion a{
+  display: none;
+}
+
+#navegacion  a::before{
+  content: " | ";
+  color: white;
+}
+
+#navegacion a:hover{
+  color: red;
+  background-color: white;
+  border-radius: 5px;
+  width: 10%;
+}
+
+#navegacion a{
+  transition: background 2s;
+}
+
+img{
+  box-shadow: 2px 2px #02010a;
+}
+
+.imagen1{
+  margin: 3%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 1vw;
+  background: #82c3a6;
+}
+
+.paisajes, .retratos{
+  width: 40%;
+  margin:auto;
+  padding: 1%;
+  background: #d5c75f;
+  border: 1px solid white;
+}
+
+@media (max-width: 420px) {
+  #navegacion a{
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+  }
+  .contenedor article{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .contenedor img{
+    justify-content: center;
+    display: flex;
+    width: 90%;
+  }
+}
+@media (min-width: 420px) {
+  #navegacion a{
+    display: flex;
+    float: right;
+    color: white;
+    text-decoration: none;
+  }
+  .contenedor {
+    display: flex;
+    width: 50%;
+}
+}
+
+.paisajes img:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px #82c3a6;
+  border-radius: 5px 10px;
+  opacity: inherit;
+  transition: 2s;
+}
+
+.retratos img:hover{
+  transform: translate(5px, 20px);
+  border-radius: 5px 10px;
+  box-shadow: 2px 2px #82c3a6;
+  transition: 2s;
+}
+
+footer {
+  margin: 3%;
+  padding: 1vw;
+  background-color: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+}
+
+@media (min-width: 420px) {
+  footer{
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.redes img{
+  width: 15%;
+  border-radius: 20px;
+}
+
+@media all and (min-width: 420px) {
+  footer{
+  }
+  .contacto{
+    width: 100%;
+    order: 1;
+  }
+  .terminos{
+    width: 100%;
+    order: 2;
+  }
+  .redes{
+    width: 100%;
+    order: 3;
+  }
+  .derechos{
+    width: 100%;
+    order: 4;
+  }
+}
