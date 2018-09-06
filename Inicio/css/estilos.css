@@ -93,10 +93,16 @@ img{
     float: right;
     color: white;
     text-decoration: none;
-  }
-  .contenedor {
-    display: flex;
-    width: 50%;
+}
+.contenedor{
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contenedor img{
+  display: flex;
+  width: 100%;
+
 }
 }
 
